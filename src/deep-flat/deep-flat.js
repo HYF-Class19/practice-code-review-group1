@@ -10,6 +10,6 @@
     */
 
 export const deepFlat = (array = []) => {
-    const newArray = [...array];
-    return newArray.flat(Infinity);
+  const newArray = [...array];
+  return newArray.flat(Infinity);
 };
