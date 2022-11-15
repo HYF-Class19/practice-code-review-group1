@@ -7,19 +7,16 @@ describe('Converts a nested array into a single array with no nesting', () => {
       const actual = deepFlat([1, [2, [3, [4]], 5]]);
       expect(actual).toEqual(expected);
     });
-
     it('whole letters', () => {
       const expected = ['a', 'b', 'c', 'd', 'e'];
       const actual = deepFlat(['a', ['b'], [['c'], ['d']], ['e']]);
       expect(actual).toEqual(expected);
     });
-
     it('for numbers and leters', () => {
       const expected = [1, 2, 3, 'a', 'b', 'c', 'd'];
       const actual = deepFlat([1, [2], [3], ['a'], [['b']], ['c'], [['d']]]);
       expect(actual).toEqual(expected);
     });
-
     it('with empty array', () => {
       const expected = [];
       const actual = deepFlat([]);
