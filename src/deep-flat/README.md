@@ -1,8 +1,36 @@
 # Deep-Flat
 
-Write a function that flattens nested arrays into a single array with no nesting
+Deep-Flat it a process of reducing the number of dimensions of an array to a
+lower number.
+
+For example, if an array exists within an array, the flat function can be used
+to concatenate the two arrays into one. One can do this by merging the inner
+array elements with those of the outer one.
 
 ---
+
+## Strategy
+
+I chose flat() method
+
+## Implementation
+
+There were a few tricky things :
+
+- the `.deepFlat` method is a process of reducing the number of dimensions of an
+  array to a lower number.
+
+- I need to converts a nestested array into nested array ( nested array is
+  `defined as Array (Outer array) within another array (inner array)`) with no
+  nesting.
+
+- It returns a new array and there are no side-effects (side-efects is
+  `Any operation that is not directly related to the final output of the function`).
+  I needed to create a copy of array.
+
+I write my deep-Flat function directly inside `...deep-flat.js(...)`,
+
+## Use Cases
 
 ## Docstring
 
