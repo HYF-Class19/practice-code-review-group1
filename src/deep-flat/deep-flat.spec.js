@@ -27,7 +27,7 @@ describe('When empty array passed function should not throw an error ', () => {
   it('When is epty array', () => {
     const expected = [];
     const received = deepFlat([]);
-    expect(expected).toEqual(received);
+    expect(received).toEqual(expected);
   });
 });
 describe('when no argument passed should apply default argument', () => {
