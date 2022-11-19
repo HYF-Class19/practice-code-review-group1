@@ -1,8 +1,35 @@
 # Intersection
 
-Write a function that finds all the values shared between two arrays.
+It is a function that finds all the values shared between two arrays, and if
+there are duplicate values among them, reduces the duplicate values to a single
+value.
+
+> _For example, if an item exists two arrays, the intersection function can be
+> used to filter out the items that exist in the two arrays, while eradicating
+> duplicates, making sure that no item is listed more than once. One can do this
+> by spreading the filtered array._
 
 ---
+
+## Strategy
+
+intersection(array, values) ->
+
+1. Create two arrays to fill with values? Some of which are present in the other
+array, and/duplicated in home array.
+2. Use `.filter` method to filter array.
+3. use `.include` as the filter condition.
+4. use the spread `...` operator to prevent duplicates.
+
+## Implementation
+
+- The intersection is a way of finding common values between two arrays.
+- I need to filter it based on a condition, which is that one value og array
+  must exist in the other array.
+- It returns an array of value that might contain duplicate values.
+  
+        I prevented this by spreading it and eradicating duplicated items. 
+- I write my intersection function directly inside `...intersection.js(...)`
 
 ## Docstring
 
