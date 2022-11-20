@@ -16,7 +16,7 @@ value.
 intersection(array, values) ->
 
 1. Create two arrays to fill with values? Some of which are present in the other
-array, and/duplicated in home array.
+   array, and/duplicated in home array.
 2. Use `.filter` method to filter array.
 3. use `.include` as the filter condition.
 4. use the spread `...` operator to prevent duplicates.
@@ -27,8 +27,9 @@ array, and/duplicated in home array.
 - I need to filter it based on a condition, which is that one value og array
   must exist in the other array.
 - It returns an array of value that might contain duplicate values.
-  
-        I prevented this by spreading it and eradicating duplicated items. 
+
+        I prevented this by spreading it and eradicating duplicated items.
+
 - I write my intersection function directly inside `...intersection.js(...)`
 
 ## Docstring
